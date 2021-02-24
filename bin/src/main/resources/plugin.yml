@@ -1,0 +1,7 @@
+name: PvpBridge
+version: ${project.version}
+main: pvp.spmc.Bridge
+api-version: 1.16
+commands:
+  arena:
+    description: main command
