@@ -1,12 +1,11 @@
 package pvp.spmc.arena;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.World;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.boss.BarColor;
+import org.bukkit.scoreboard.Score;
 import pvp.spmc.display.BossBarDisplay;
+import pvp.spmc.display.ScoreboardDisplay;
 import pvp.spmc.status.GameStatus;
 
 import java.util.ArrayList;
@@ -15,12 +14,12 @@ import java.util.UUID;
 public class ArenaManager {
     private static String name;
     private int id;
-    private GameStatus status;
+    public static GameStatus status;
     private boolean mapdone;
     private ArrayList<UUID> plrs;
     private Location lbyspawn;
-    private Location bspawn;
-    private Location rspawn;
+    public static Location bspawn;
+    public static Location rspawn;
     public ArenaManager(String name, int id, boolean mapdone, ArrayList<UUID> plrs, Location lby, Location blue, Location red) {
         this.name = name;
         this.id = id;

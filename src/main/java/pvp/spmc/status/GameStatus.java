@@ -8,7 +8,6 @@ public enum GameStatus {
     R1,
     R2,
     R3,
-    CONTINUE,
     BWIN,
     RWIN
 }
