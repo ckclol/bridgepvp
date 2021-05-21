@@ -94,7 +94,7 @@ public class ArenaManager {
         this.mapdone = mapdone;
         switch(status) {
             case STARTING:
-                
+                WorldManagement.rollback(this.name);
                 BossBarDisplay.bar.setTitle("Bridge");
                 BossBarDisplay.bar.setProgress(6.0);
                 BossBarDisplay.bar.setColor(BarColor.WHITE);
