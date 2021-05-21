@@ -33,10 +33,13 @@ public class Started implements Listener {
         if (JoinEvent.plrcount == 2) {
             p1.sendTitle(ChatColor.GREEN + "3", "", 1, 20, 1);
             p2.sendTitle(ChatColor.GREEN + "3", "", 1, 20, 1);
+            TimeUnit.SECONDS.sleep(1);
             p1.sendTitle(ChatColor.YELLOW + "2", "", 1, 20, 1);
             p2.sendTitle(ChatColor.YELLOW + "2", "", 1, 20, 1);
+            TimeUnit.SECONDS.sleep(1);
             p1.sendTitle(ChatColor.DARK_RED + "1", "", 1, 20, 1);
             p2.sendTitle(ChatColor.DARK_RED + "1", "", 1, 20, 1);
+            TimeUnit.SECONDS.sleep(1);
             p1.sendTitle(ChatColor.WHITE + "Go", "", 1, 20, 1);
             p2.sendTitle(ChatColor.WHITE + "Go", "", 1, 20, 1);
             p1.playSound(p1.getLocation(), Sound.ENTITY_WITHER_DEATH, 1.0f, 1.0f);
