@@ -94,21 +94,7 @@ public class ArenaManager {
         this.mapdone = mapdone;
         switch(status) {
             case STARTING:
-                World world = Bukkit.getWorld(getName());
-                int x1 = 30;
-                int y1 = 50;
-                int z1 = 10;
-                int x2 = -30;
-                int y2 = 0;
-                int z2 = -10;{
-                for (int x = x1; x <= x2; x++) {
-                    for (int y = y1; y <= y2; y++) {
-                        for (int z = z1; z <= z2; z++) {
-                            Block n = world.getBlockAt(x, y, z);
-                            n.setType(Material.AIR);
-                        }
-                    }
-                }
+                
                 BossBarDisplay.bar.setTitle("Bridge");
                 BossBarDisplay.bar.setProgress(6.0);
                 BossBarDisplay.bar.setColor(BarColor.WHITE);
